@@ -9,6 +9,4 @@
 
 #Compiled version
 /built
-
-#search consoles
-/public/google58446a02114ddbe4.html
+/public/scripts/bundle.min.js
