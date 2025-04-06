@@ -242,7 +242,7 @@ const handleRR = async (req: Request, res: Response) => {
     }
 
     //increment count if not a bot
-    if (isbot(req.headers["user-agent"])) {
+    if (!isbot(req.headers["user-agent"])) {
         await collection.updateOne({ _id: "TotalRRCount" }, incValue);
         await collection.updateOne({ link: url }, incValue);
     }
